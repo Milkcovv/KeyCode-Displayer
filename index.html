@@ -12,6 +12,13 @@
 			align-items: center;
 		}
 
+		h1,h2{
+			font-size:100px;
+		}
+		h2{
+			margin-top:-50px;
+		}
+
 	</style>
 </head>
 <body>
@@ -24,9 +31,13 @@
 	
 
 function getKeyCode(e) {
+	const randomColor1 = '#' + Math.floor(Math.random()*16777215).toString(16);
+	const randomColor2 = '#' + Math.floor(Math.random()*16777215).toString(16);
 	const h1 = document.querySelector('h1');
 	const h2 = document.querySelector('h2');
 	h1.textContent = e.keyCode;
+	h1.style.color = randomColor1;
+	h2.style.color = randomColor2;
 	if(e.key == " "){
 		h2.textContent = 'SPACE'
 	}else if(e.key == "META"){
