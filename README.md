@@ -1,0 +1,1 @@
+When you press a key, it will display corresponded Key and and Key code.
